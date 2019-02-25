@@ -1,0 +1,24 @@
+package course;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+		double A, B, C;
+		
+		A = s.nextDouble();
+		B = s.nextDouble();
+		C = s.nextDouble();
+		
+		System.out.println("TRIANGULO: " + A*C);
+		System.out.println("CIRCULO: " + C*3.13159);
+		System.out.println("TRAPEZIO: " + ((A+B)*C)/2);
+		System.out.println("QUADRADO: " + B*B);
+		System.out.println("RETANGULO: " + A*B);
+
+		s.close();
+	}
+
+}

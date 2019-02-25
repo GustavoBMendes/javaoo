@@ -1,0 +1,24 @@
+package course;
+
+import java.util.Scanner;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+		int i;
+		int n = s.nextInt();
+		
+		for (i = 0; i < n; i++) {
+			
+			if(i % 2 != 0) {
+				System.out.println(i);
+			}
+		}
+		
+		
+		s.close();
+	}
+
+}

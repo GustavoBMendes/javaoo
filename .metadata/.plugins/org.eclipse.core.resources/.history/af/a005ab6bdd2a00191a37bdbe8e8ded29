@@ -1,0 +1,32 @@
+package course;
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+		s.useLocale(locale.US);
+		double A, B, C, triangulo, circulo, trapezio, quadrado, retangulo;
+		
+		A = s.nextDouble();
+		B = s.nextDouble();
+		C = s.nextDouble();
+		
+		triangulo = A * C/ 2.0;
+		circulo = C * C * 3.13159;
+		trapezio = ((A + B) * C) / 2;
+		quadrado = B * B;
+		retangulo = A * B;
+		
+		System.out.printf("TRIANGULO: %.3f%n", triangulo);
+		System.out.printf("CIRCULO: %.3f%n", circulo);
+		System.out.printf("TRAPEZIO: %.3f%n", trapezio);
+		System.out.printf("QUADRADO: %.3f%n", quadrado);
+		System.out.printf("RETANGULO: %.3f%n", retangulo);
+
+		s.close();
+	}
+
+}

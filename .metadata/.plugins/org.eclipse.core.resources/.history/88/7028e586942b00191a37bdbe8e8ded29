@@ -1,0 +1,39 @@
+package course;
+
+import java.util.Scanner;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+		int cod = s.nextInt();
+		int qnt = s.nextInt();
+		double valor;
+		
+		if (cod == 1) {
+			valor = qnt * 4.0;
+		}
+		
+		else if (cod == 2) {
+			valor = qnt * 4.5;
+		}
+		
+		else if (cod == 3) {
+			valor = qnt * 5.0;
+		}
+		
+		else if (cod == 4) {
+			valor = qnt * 2.0;
+		}
+		
+		else {
+			valor = qnt * 1.5;
+		}
+		
+		System.out.printf("Total: R$ %.2f%n", valor);
+		
+		s.close();
+	}
+
+}
