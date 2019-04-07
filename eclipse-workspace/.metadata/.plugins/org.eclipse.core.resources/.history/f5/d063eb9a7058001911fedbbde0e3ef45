@@ -1,0 +1,37 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+import empresa.Employee;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner s = new Scanner(System.in);
+		
+		List<Employee> list = new ArrayList<>();
+		
+		System.out.println("Enter the number of employees: ");
+		int n = s.nextInt();
+		
+		for (int i = 1; i <= n; i++) {
+			System.out.println("Employee #" + i + " data: ");
+			System.out.print("Outsourced (y/n)? ");
+			char ch = s.next().charAt(0);
+			System.out.print("Name: ");
+			s.nextLine();
+			String name = s.nextLine();
+			System.out.print("Hours: ");
+			double hours = s.nextDouble();
+			System.out.print("Value per Hour: ");
+			double valuePerHour = s.nextDouble();
+		}
+		
+	}
+
+}
